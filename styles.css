@@ -1,0 +1,102 @@
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    /* background-color: bisque;   CHANGE BACKGROUND */
+}
+/* Index Header */
+.homepage-header {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    background-color: #22334E;
+
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    top: 0;
+    z-index: 1;
+}
+
+.PLM-logo {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding-right: 20px;
+}
+
+.PLM-fil {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.PLM-fil::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.PLM-eng {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.PLM-eng::before {
+    content: "\a";
+    white-space: pre;
+}
+
+main {
+    margin-top: 100px;
+    padding: 32px;
+}
+
+.main-homepage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lab-grab-start {
+    width: 900px;
+    height: 538px;
+    background-color: rgba(117, 116, 116, 0.164);
+    border-radius: 50px;
+
+/* MAKE GRID FOR LAYOUT */
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image {
+    font-size: 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    color: #fff;
+    background-color: #22334E;
+}
+
+
+
