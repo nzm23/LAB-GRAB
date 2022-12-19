@@ -85,8 +85,10 @@ main {
 
 .image {
     position: relative;
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
     text-align: right;
 
     font-size: 300px;
@@ -108,6 +110,7 @@ main {
 
 .description, .start-button {
     grid-area: 2 / 2 / 3 / 3;
+
 }
 
 .description {
@@ -129,8 +132,9 @@ main {
     text-decoration: none;
     
     display: grid;
-    justify-content: center;
+    justify-content: baseline;
     align-content: center;
+    align-self: center;
 
     background-color: #FFA4A4;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
@@ -151,6 +155,7 @@ main {
     }
     .image {
         font-size: 100px;
+        padding: 0 25px 0 0;
     }
 
     .title {
@@ -158,7 +163,8 @@ main {
     }
 
     .description {
-        font-size: 15px;
+        font-size: 12.5px;
+
     }
 
     .start-button {
@@ -237,19 +243,19 @@ header {
     flex-direction: column;
 }
 
-#directory:hover {
-    background-color: #b1d6eb;
-    border-radius: 50px;
-}
-
-#directory:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
 #directory {
     text-decoration: none;
     color: black;     /* CHANGE FONT COLOR */
+}
+
+.directory:hover {
+    background-color: #a5d1ea;
+    border-radius: 50px;
+}
+
+.directory:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
 .directory-name {
@@ -269,19 +275,19 @@ header {
     flex-direction: column;
 }
 
-#equipment:hover {
-    background-color: #b1d6eb;
-    border-radius: 50px;
-}
-
-#equipment:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
 #equipment {
     text-decoration: none;
     color: black;     /* CHANGE FONT COLOR */
+}
+
+.equipment:hover {
+    background-color: #a5d1ea;
+    border-radius: 50px;
+}
+
+.equipment:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
 .equipment-name {
