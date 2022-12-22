@@ -508,7 +508,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 32px;
+    padding: 18px;
     width: 100%;
     
     position: fixed;
@@ -517,6 +517,13 @@ footer {
 
     color: #fff;
     background-color: #22334E;
+}
+
+footer img {
+    width: 48px;
+    height: 40px;
+
+    padding: 0 5px 0 5px;
 }
 
 
