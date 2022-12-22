@@ -8,6 +8,14 @@ body {
     background-color: #f2f2f2;
 }
 
+h3, .physics-directory, .chemistry-directory {
+    font-family: "Oswald", sans-serif;
+}
+
+p, li, h5 {
+    font-family: "Open-Sans", sans-serif;
+}
+
 /* Index Header */
 .homepage-header {
     position: fixed;
@@ -376,6 +384,7 @@ header {
 
 #chemistry-directory {
     text-decoration: none;
+    font-weight: 600;
 }
 .chemistry-directory:hover {
     background-color: #a5d1ea;
@@ -412,6 +421,7 @@ header {
 
 #physics-directory {
     text-decoration: none;
+    font-weight: 600;
 }
 .physics-directory:hover {
     background-color: #a5d1ea;
@@ -455,6 +465,43 @@ header {
     padding: 32px;
 }
 
+.pentabyte-page-header {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    justify-content: center;
+
+    width: 900px;
+    padding: 32px 40px 32px 40px;
+}
+
+.pentabyte-page-icon {
+    width: 125px;
+    height: 109px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 32px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.pentabyte-description {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: justify;
+
+    width: 800px;
+    font-size: 18px;
+    padding-top: 20px;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+
 .member-containers {
     position: relative;
     display: flex;
@@ -463,44 +510,32 @@ header {
     text-align: center;
 
     flex-direction: row;
-    gap: 25px;
+    gap: 40px;
     padding: 32px;
-
+    letter-spacing: 1.5px;
 }
 
-.bauca {
-    width: 200px;
-    height: 350px;
-    border: 1px solid black;
-    background-color: #FFA4A4;
+.member-containers h5 {
+    padding: 0 10px 10px 10px;
+    font-weight: 100;
 }
 
-.francisco {
-    width: 200px;
-    height: 350px;
-    border: 1px solid black;
-    background-color: #FFA4A4;
+.member-containers p {
+    font-size: 15px;
+    text-align: justify;
 }
 
-.nacario {
-    width: 200px;
-    height: 350px;
-    border: 1px solid black;
-    background-color: #FFA4A4;
+
+.member-containers img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 15px;
 }
 
-.omura {
+.bauca, .francisco, .nacario, .omura, .ramos {
     width: 200px;
-    height: 350px;
-    border: 1px solid black;
-    background-color: #FFA4A4;
-}
-
-.ramos {
-    width: 200px;
-    height: 350px;
-    border: 1px solid black;
-    background-color: #FFA4A4;
+    height: 300px;
 }
 
 footer {
@@ -508,7 +543,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 18px;
+    padding: 10px;
     width: 100%;
     
     position: fixed;
