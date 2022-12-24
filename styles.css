@@ -20,6 +20,7 @@ p, li, h5 {
 .homepage-header {
     position: fixed;
     width: 100%;
+    height: 80px;
     padding: 20px;
     color: #fff;
     background-color: #22334E;
@@ -112,6 +113,7 @@ p, li, h5 {
     display: grid;
     justify-content: left;
     align-self: flex-end;
+    letter-spacing: 5px;
 
     font-size: 70px;
     
@@ -241,7 +243,7 @@ header {
     flex-direction: row;
     gap: 150px;
 }
-
+/* FACULTY - MAIN MENU */
 .directory {
     width: 500px;
     height: 500px;
@@ -275,6 +277,7 @@ header {
     font-size: 45px;
 }
 
+/* STUDENT - MAIN MENU*/
 .equipment {
     width: 500px;
     height: 500px;
@@ -336,102 +339,7 @@ header {
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
-/* GENERAL DIRECTORY STYLES */
-.directory-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    margin: 100px 0 75px 0;
-    padding: 32px;
-}
-
-.directory-containers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 25px;
-
-    font-size: 25px;
-}
-
-/* CHEMISTRY DIRECTORY */
-.chemistry-directory {
-    width: 700px;
-    height: 40px;
-    background-color: #c3ddec;
-    color: #324768;
-    padding-bottom: 10px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.chem-contents{
-    width: 100%;
-    height: 550px;     /* Change if needed */
-    margin: 20px;
-
-    background-color: #ffb80334;
-    color: #324768;
-}
-
-#chemistry-directory {
-    text-decoration: none;
-    font-weight: 600;
-}
-.chemistry-directory:hover {
-    background-color: #a5d1ea;
-}
-.chemistry-directory:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
-/* PHYSICS DIRECTORY */
-.physics-directory {
-    width: 700px;
-    height: 40px;
-    background-color: #c3ddec;
-    color: #324768;
-    padding-bottom: 10px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.physics-contents{
-    width: 100%;
-    height: 550px;     /* Change if needed */
-    margin: 20px;
-
-    background-color: #42ff0334;
-    color: #324768;
-}
-
-#physics-directory {
-    text-decoration: none;
-    font-weight: 600;
-}
-.physics-directory:hover {
-    background-color: #a5d1ea;
-}
-.physics-directory:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
-/* EQUIPMENT PAGE */
+/* GENERAL EQUIPMENT STYLES */
 .equipment-page {
     display: flex;
     justify-content: center;
@@ -442,7 +350,99 @@ header {
     padding: 32px;
 }
 
-.equipment-container {
+.equipment-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+    
+    font-size: 25px;
+}
+
+#equipments {
+    width: 700px;
+    height: 40px;
+    background-color: #c3ddec;
+    color: #324768;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-decoration: none;
+    font-weight: 600;
+}
+#equipments:hover {
+    background-color: #a5d1ea;
+}
+#equipments:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+/* CHEMISTRY EQUIPMENTS */
+.chem-contents{
+    margin: 32px;
+    background-color: #ffb80334;
+    color: #324768;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+
+.items {
+    width: 300px;
+    height: 300px;
+    background-color: #C3DDEC;
+    border-radius: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items img {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 15px;
+}
+
+.items p {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+/* PHYSICS EQUIPMENTS */
+.physics-contents{
+    width: 100%;
+    height: 550px;     /* Change if needed */
+    margin: 20px;
+
+    background-color: #42ff0334;
+    color: #324768;
+}
+
+/* DIRECTORY PAGE */
+.directory-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 100px 0 75px 0;
+    padding: 32px;
+}
+
+.directory-container {
     position: relative;
     display: flex;
     justify-content: center;
