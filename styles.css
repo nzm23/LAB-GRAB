@@ -360,12 +360,12 @@ header {
     align-items: center;
 
     background-color: #c3ecc9;
-    color: #324768;
+    color: #2d2d2d;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
 .checkout-button:hover {
-    background-color: #9deca9;
+    background-color: #9dec9e;
 }
 
 .checkout-button:active {
@@ -423,7 +423,6 @@ header {
 /* CHEMISTRY EQUIPMENTS */
 .chem-contents{
     margin: 32px;
-    /* background-color: #ffb80334; */
     color: #324768;
 
     display: grid;
@@ -436,7 +435,18 @@ header {
 /* PHYSICS EQUIPMENTS */
 .physics-contents{
     margin: 32px;
-    /* background-color: #ffb80334; */
+    color: #324768;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+
+/* PHYSICS EQUIPMENTS */
+.biology-contents{
+    margin: 32px;
     color: #324768;
 
     display: grid;
@@ -491,11 +501,19 @@ header {
 }
 
 .physics-contents>.item-button{
-    background-color: #fdc0ca;
+    background-color: #fec5d2;
 }
 
 .physics-contents>.item-button:hover {
-    background-color: #ff9ab1;
+    background-color: #fda9bd;
+}
+
+.biology-contents>.item-button{
+    background-color: #fdf3c0;
+}
+
+.biology-contents>.item-button:hover {
+    background-color: #ffee99;
 }
 
 .item-button:active {
