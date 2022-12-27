@@ -311,6 +311,12 @@ header {
     font-size: 45px;
 }
 
+.buttom-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 32px;
+}
+
 .back-button {
     width: 150px;
     height: 40px;
@@ -339,6 +345,35 @@ header {
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
+.checkout-button {
+    width: 150px;
+    height: 40px;
+    border: transparent;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration: none;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    background-color: #c3ecc9;
+    color: #324768;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.checkout-button:hover {
+    background-color: #9deca9;
+}
+
+.checkout-button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
 /* GENERAL EQUIPMENT STYLES */
 .equipment-page {
     display: flex;
@@ -361,7 +396,7 @@ header {
 }
 
 #equipments {
-    width: 700px;
+    width: 450px;
     height: 30px;
     background-color: #c3ddec;
     color: #324768;
@@ -396,8 +431,19 @@ header {
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 25px;
     grid-row-gap: 25px;
+}
 
-    
+/* PHYSICS EQUIPMENTS */
+.physics-contents{
+    margin: 32px;
+    /* background-color: #ffb80334; */
+    color: #324768;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
 }
 
 .items {
@@ -425,7 +471,6 @@ header {
 .item-button {
     width: 300px;
     height: 300px;
-    background-color: #c3ece3;
     border-radius: 20px;
     border: 1px solid #1f1f1f;
     color: #1f1f1f;
@@ -437,23 +482,25 @@ header {
     align-items: center;
 }
 
-.item-button:hover {
+.chem-contents>.item-button{
+    background-color: #c3ece3;
+}
+
+.chem-contents>.item-button:hover {
     background-color: #97ead8;
+}
+
+.physics-contents>.item-button{
+    background-color: #fdc0ca;
+}
+
+.physics-contents>.item-button:hover {
+    background-color: #ff9ab1;
 }
 
 .item-button:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
-/* PHYSICS EQUIPMENTS */
-.physics-contents{
-    width: 100%;
-    height: 550px;     /* Change if needed */
-    margin: 20px;
-
-    background-color: #42ff0334;
-    color: #324768;
 }
 
 /* DIRECTORY PAGE */
