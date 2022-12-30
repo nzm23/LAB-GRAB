@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open-Sans">
+    <script src="checkout.js" async></script>
     <title>Chemistry Directory</title>
 </head>
+
 <body>
     <header>
         <img src="https://plm.edu.ph/images/Seal/PLM_Seal_BOR-approved_2014.png" 
@@ -56,200 +58,208 @@
             </a>
         </div>
 
-        <!-- EQUIPMENT CONTAINER -->
-        <div class="chem-contents">
-            
-            <button class="item-button" id="beaker">
-                <div class="beaker items" id="beaker">
-                    <img src="icons\chemistry\beaker.png" alt="beaker">
-                    <p>BEAKER</p>
-                </div>
-            </button>
-            
-            <button class="item-button" id="bunsen-burner">
-                <div class="bunsen-burner items" id="bunsen-burner">
-                    <img src="icons\chemistry\bunsen-burner.png" alt="bunsen-burner">
-                    <p>BUNSEN BURNER</p>
-                </div>
-            </button>
+        <div class="equipment-page-grid">
 
-            <button class="item-button" id="buret">
-                <div class="buret items" id="buret">
-                    <img src="icons\chemistry\buret.png" alt="buret">
-                    <p>BURET</p>
+            <!--EQUIPMENT CONTAINER-->
+            <section class="chem-contents">
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="beaker">
+                    <div class="beaker items shop-item shop-item-title" id="beaker">
+                        <img src="icons\chemistry\beaker.png" class="shop-item-image" align="middle" alt="beaker">
+                        <span class="shop-item-Description">BEAKER</span>
+                    </div>
+                </button>
+    
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="bunsen-burner">
+                    <div class="bunsen-burner items shop-item shop-item-title" id="bunsen-burner">
+                        <img src="icons\chemistry\bunsen-burner.png" class="shop-item-image" align="middle" alt="bunsen-burner">
+                        <span class="shop-item-Description">BUNSEN BURNER</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="buret">
+                    <div class="buret items items shop-item shop-item-title" id="buret">
+                        <img src="icons\chemistry\buret.png"  class="shop-item-image" align="middle" alt="buret">
+                        <span class="shop-item-Description">BURETTE</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="burette-clamp">
+                    <div class="burette-clamp items items shop-item shop-item-title" id="burette-clamp">
+                        <img src="icons\chemistry\burette-clamp.png" class="shop-item-image" align="middle" alt="burette-clamp">
+                        <span class="shop-item-Description">BURETTE CLAMP</span>
+                    </div>
+                </button>
+    
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="centrifuge">
+                    <div class="centrifuge items items shop-item shop-item-title" id="centrifuge">
+                        <img src="icons\chemistry\centrifuge.png" class="shop-item-image" align="middle" alt="centrifuge">
+                        <span class="shop-item-Description">CENTRIFUGE</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="conical-flask">
+                    <div class="conical-flask items items shop-item shop-item-title" id="conical-flask">
+                        <img src="icons\chemistry\conical-flask.png" class="shop-item-image" align="middle" alt="conical-flask">
+                        <span class="shop-item-Description">CONNICAL FLASK</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="dessicator">
+                    <div class="desiccator items items shop-item shop-item-title" id="desiccator">
+                        <img src="icons\chemistry\desiccator.png" class="shop-item-image" align="middle" alt="desiccator">
+                        <span class="shop-item-Description">DESICCATOR</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="disposable-pipet">
+                    <div class="disposable-pipet items items shop-item shop-item-title" id="disposable-pipet">
+                        <img src="icons\chemistry\disposable-pipet.png" class="shop-item-image" align="middle" alt="disposable-pipet">
+                        <span class="shop-item-Description">DISPOSABLE <br> PIPET</span>     
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="dropper">
+                    <div class="dropper items items shop-item shop-item-title" id="dropper">
+                        <img src="icons\chemistry\dropper.png" class="shop-item-image" align="middle" alt="dropper">
+                        <span class="shop-item-Description">DROPPER</span>     
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="flask">
+                    <div class="flask items items shop-item shop-item-title" id="flask">
+                        <img src="icons\chemistry\flask.png" class="shop-item-image" align="middle" alt="flask">
+                        <span class="shop-item-Description">FLASK</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="florence-flask">
+                    <div class="florence-flask items items shop-item shop-item-title" id="florence-flask">
+                        <img src="icons\chemistry\florence-flask.png" class="shop-item-image" align="middle" alt="florence-flask">
+                        <span class="shop-item-Description">FLORENCE<br>FLASK</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="funnel">
+                    <div class="funnel items items shop-item shop-item-title" id="funnel">
+                        <img src="icons\chemistry\funnel.png" class="shop-item-image" align="middle" alt="funnel">
+                        <span class="shop-item-Description">FUNNEL</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="graduated-cylinder">
+                    <div class="graduated-cylinder items items shop-item shop-item-title" id="graduated-cylinder">
+                        <img src="icons\chemistry\graduated-cylinder.png" class="shop-item-image" align="middle" alt="graduated-cylinder">
+                        <span class="shop-item-Description">GRADUATED<br>CYLINDER</span>
+                    </div>
+                </button>
+                
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="pipet-filter-bulb">
+                    <div class="pipet-filter-bulb items items shop-item shop-item-title" id="pipet-filter-bulb">
+                        <img src="icons\chemistry\pipet-filter-bulb.png" class="shop-item-image" align="middle" alt="pipet-filter-bulb">
+                        <span class="shop-item-Description"p>PIPET FILTER<br>BULB</span>   
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="pipet">
+                    <div class="pipet items items shop-item shop-item-title" id="pipet">
+                        <img src="icons\chemistry\pipet.png" class="shop-item-image" align="middle" alt="pipet">
+                        <span class="shop-item-Description">PIPET</span>
+                    </div>
+                </button>
+    
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="ring-stand">
+                    <div class="ring-stand items items shop-item shop-item-title" id="ring-stand">
+                        <img src="icons\chemistry\ring-stand.png" class="shop-item-image" align="middle" alt="ring-stand">
+                        <span class="shop-item-Description">RING STAND</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="safety-goggles">
+                    <div class="safety-goggles items items shop-item shop-item-title" id="safety-goggles">
+                        <img src="icons\chemistry\safety-goggles.png" class="shop-item-image" align="middle" alt="safety-goggles">
+                        <span class="shop-item-Description">SAFETY GOGGLES</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="stirring-rod">
+                    <div class="stirring-rod items items shop-item shop-item-title" id="stirring-rod">
+                        <img src="icons\chemistry\stirring-rod.png" class="shop-item-image" align="middle" alt="stirring-rod">
+                        <span class="shop-item-Description">STIRRING ROD</span>   
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="test-tube">
+                    <div class="test-tube items items shop-item shop-item-title" id="test-tube">
+                        <img src="icons\chemistry\test-tube.png" class="shop-item-image" align="middle" alt="test-tube">
+                        <span class="shop-item-Description">TEST TUBE</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="utility-clamp">
+                    <div class="utility-clamp items items shop-item shop-item-title" id="utility-clamp">
+                        <img src="icons\chemistry\utility-clamp.png" class="shop-item-image" align="middle" alt="utility-clamp">
+                        <span class="shop-item-Description">UTILITY CLAMP</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="vial">
+                    <div class="vial items items shop-item shop-item-title" id="vial">
+                        <img src="icons\chemistry\vial.png" class="shop-item-image" align="middle" alt="vial">
+                        <span class="shop-item-Description">VIAL</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="volumetric-flask">
+                    <div class="volumetric-flask items items shop-item shop-item-title" id="volumetric-flask">
+                        <img src="icons\chemistry\volumetric-flask.png" class="shop-item-image" align="middle" alt="volumetric-flask">
+                        <span class="shop-item-Description">VOLUMETRIC FLASK</span>
+                    </div>
+                </button>
+                
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="wash-bottle">
+                    <div class="wash-bottle items items shop-item shop-item-title" id="wash-bottle">
+                        <img src="icons\chemistry\wash-bottle.png" class="shop-item-image" align="middle" alt="wash-bottle">
+                        <span class="shop-item-Description">WASH <br> BOTTLE</span>
+                    </div>
+                </button>
+                
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="watch-glass">
+                    <div class="watch-glass items items shop-item shop-item-title" id="watch-glass">
+                        <img src="icons\chemistry\watch-glass.png" class="shop-item-image" align="middle" alt="watch-glass">
+                        <span class="shop-item-Description">WATCH GLASS</span>     
+                    </div>
+                </button>
+    
+            </section>
+    
+           <!-- CHECKOUT SECTION -->
+            <section class="chekout-section grid2">
+                <h2 class="checkout-header">ITEM CHECKOUT</h2> 
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
                 </div>
-            </button>
-
-            <button class="item-button" id="burette-clamp">
-                <div class="burette-clamp items" id="burette-clamp">
-                    <img src="icons\chemistry\burette-clamp.png" alt="burette-clamp">
-                    <p>BURETTE CLAMP</p>
-                </div>
-            </button>
-
-
-            <button class="item-button" id="centrifuge">
-                <div class="centrifuge items" id="centrifuge">
-                    <img src="icons\chemistry\centrifuge.png" alt="centrifuge">
-                    <p>CENTRIFUGE</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="conical-flask">
-                <div class="conical-flask items" id="conical-flask">
-                    <img src="icons\chemistry\conical-flask.png" alt="conical-flask">
-                    <p>CONNICAL FLASK</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="dessicator">
-                <div class="desiccator items" id="desiccator">
-                    <img src="icons\chemistry\desiccator.png" alt="desiccator">
-                    <p>DESICCATOR</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="disposable-pipet">
-                <div class="disposable-pipet items" id="disposable-pipet">
-                    <img src="icons\chemistry\disposable-pipet.png" alt="disposable-pipet">
-                    <p>DISPOSABLE <br> PIPET</p>     
-                </div>
-            </button>
-
-            <button class="item-button" id="dropper">
-                <div class="dropper items" id="dropper">
-                    <img src="icons\chemistry\dropper.png" alt="dropper">
-                    <p>DROPPER</p>     
-                </div>
-            </button>
-
-            <button class="item-button" id="flask">
-                <div class="flask items" id="flask">
-                    <img src="icons\chemistry\flask.png" alt="flask">
-                    <p>FLASK</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="florence-flask">
-                <div class="florence-flask items" id="florence-flask">
-                    <img src="icons\chemistry\florence-flask.png" alt="florence-flask">
-                    <p>FLASK</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="funnel">
-                <div class="funnel items" id="funnel">
-                    <img src="icons\chemistry\funnel.png" alt="funnel">
-                    <p>FUNNEL</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="graduated-cylinder">
-                <div class="graduated-cylinder items" id="graduated-cylinder">
-                    <img src="icons\chemistry\graduated-cylinder.png" alt="graduated-cylinder">
-                    <p>GRADUATED <BR>CYLINDER</p>
-                </div>
-            </button>
-            
-            <button class="item-button" id="pipet-filter-bulb">
-                <div class="pipet-filter-bulb items" id="pipet-filter-bulb">
-                    <img src="icons\chemistry\pipet-filter-bulb.png" alt="pipet-filter-bulb">
-                    <p>PIPET FILTER <br> BULB</p>   
-                </div>
-            </button>
-
-            <button class="item-button" id="pipet">
-                <div class="pipet items" id="pipet">
-                    <img src="icons\chemistry\pipet.png" alt="pipet">
-                    <p>PIPET</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="ring-stand">
-                <div class="ring-stand items" id="ring-stand">
-                    <img src="icons\chemistry\ring-stand.png" alt="ring-stand">
-                    <p>RING STAND</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="safety-goggles">
-                <div class="safety-goggles items" id="safety-goggles">
-                    <img src="icons\chemistry\safety-goggles.png" alt="safety-goggles">
-                    <p>SAFETY GOGGLES</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="stirring-rod">
-                <div class="stirring-rod items" id="stirring-rod">
-                    <img src="icons\chemistry\stirring-rod.png" alt="stirring-rod">
-                    <p>STIRRING ROD</p>   
-                </div>
-            </button>
-
-            <button class="item-button" id="test-tube">
-                <div class="test-tube items" id="test-tube">
-                    <img src="icons\chemistry\test-tube.png" alt="test-tube">
-                    <p>TEST TUBE</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="utility-clamp">
-                <div class="utility-clamp items" id="utility-clamp">
-                    <img src="icons\chemistry\utility-clamp.png" alt="utility-clamp">
-                    <p>UTILITY CLAMP</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="vial">
-                <div class="vial items" id="vial">
-                    <img src="icons\chemistry\vial.png" alt="vial">
-                    <p>VIAL</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="volumetric-flask">
-                <div class="volumetric-flask items" id="volumetric-flask">
-                    <img src="icons\chemistry\volumetric-flask.png" alt="volumetric-flask">
-                    <p>VOLUMETRIC FLASK</p>
-                </div>
-            </button>
-            
-            <button class="item-button" id="wash-bottle">
-                <div class="wash-bottle items" id="wash-bottle">
-                    <img src="icons\chemistry\wash-bottle.png" alt="wash-bottle">
-                    <p>WASH <br> BOTTLE</p>
-                </div>
-            </button>
-            
-            <button class="item-button" id="watch-glass">
-                <div class="watch-glass items" id="watch-glass">
-                    <img src="icons\chemistry\watch-glass.png" alt="watch-glass">
-                    <p>WATCH GLASS</p>     
-                </div>
-            </button>
-
+                    <div class="cart-items"></div>
+                    <button class="btn btn-primary btn-purchase" type="button">TAP ID TO CHECKOUT</button>
+            </section>
         </div>
+
 
         <div class="buttom-buttons">
             <a class="back-button" href="main-menu.html">
-                <button class="back-button"
-                    type="button">
-                    BACK
-                </button>
+                <button class="back-button" type="button">BACK</button>
             </a>
-    
             <a class="checkout-button" href="checkout.html">
-                <button class="checkout-button"
-                    type="button">
-                    CHECKOUT
-                </button>
+                <button class="checkout-button" type="button">CHECKOUT</button>
             </a>
         </div>
-        
-
     </main>
 
 
+    
     <footer>
         <h3>Powered by</h3>
         <img src="icons\Pentabyte_Logo.png" 

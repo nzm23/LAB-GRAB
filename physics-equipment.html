@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open-Sans">
+    <script src="checkout.js" async></script>
     <title>Physics Directory</title>
 </head>
 <body>
@@ -54,134 +55,143 @@
                     <!-- contents HERE -->
                 </div>
             </a>
-
-        </div>
-
-        <div class="physics-contents">
-
-            <button class="item-button" id="ammeter">
-                <div class="ammeter items" id="">
-                    <img src="icons\physics\ammeter.png" alt="ammeter">
-                    <p>ANMETER</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="concave-lens">
-                <div class="concave-lens items" id="concave-lens">
-                    <img src="icons\physics\concave-lens.png" alt="concave-lens">
-                    <p>CONCAVE LENS</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="convex-lens">
-                <div class="convex-lens items" id="convex-lens">
-                    <img src="icons\physics\convex-lens.png" alt="convex-lens">
-                    <p>CONVEX LENS</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="galvanometer">
-                <div class="galvanometer items" id="galvanometer">
-                    <img src="icons\physics\galvanometer.png" alt="galvanometer">
-                    <p>GALVANOMETER</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="lens">
-                <div class="lens items" id="lens">
-                    <img src="icons\physics\lens.png" alt="lens">
-                    <p>LENS</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="magnet">
-                <div class="magnet items" id="magnet">
-                    <img src="icons\physics\magnet.png" alt="magnet">
-                    <p>MAGNET</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="multimeter">
-                <div class="multimeter items" id="multimeter">
-                    <img src="icons\physics\multimeter.png" alt="multimeter">
-                    <p>MULTIMETER</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="potentiometer">
-                <div class="potentiometer items" id="potentiometer">
-                    <img src="icons\physics\potentiometer.png" alt="potentiometer">
-                    <p>POTENTIOMETER</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="prism">
-                <div class="prism items" id="prism">
-                    <img src="icons\physics\prism.png" alt="prism">
-                    <p>PRISM</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="resistor">
-                <div class="resistor items" id="resistor">
-                    <img src="icons\physics\resistor.png" alt="resistor">
-                    <p>RESISTOR</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="spring-balance">
-                <div class="spring-balance items" id="spring-balance">
-                    <img src="icons\physics\spring-balance.png" alt="spring-balance">
-                    <p>SPRING BALANCE</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="thermometer">
-                <div class="thermometer items" id="thermometer">
-                    <img src="icons\physics\thermometer.png" alt="thermometer">
-                    <p>THERMOMETER</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="Triple-Beam-Balance">
-                <div class="Triple-Beam-Balance items" id="Triple-Beam-Balance">
-                    <img src="icons\physics\Triple-Beam-Balance.png" alt="Triple-Beam-Balance">
-                    <p>TRIPLE BEAM <br> BALANCE</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="tuning-fork">
-                <div class="tuning-fork items" id="tuning-fork">
-                    <img src="icons\physics\tuning-fork.png" alt="tuning-fork">
-                    <p>TUNING FORK</p>
-                </div>
-            </button>
-
-            <button class="item-button" id="voltmeter">
-                <div class="voltmeter items" id="voltmeter">
-                    <img src="icons\physics\voltmeter.png" alt="voltmeter">
-                    <p>VOLTMETER</p>
-                </div>
-            </button>
-
         </div>
         
+        <div class="equipment-page-grid">
+
+            <!-- EQUIPMENT SECTION -->
+            <section class="physics-contents grid1">
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="ammeter">
+                    <div class="ammeter items shop-item shop-item-title" id="anmeter">
+                        <img src="icons\physics\ammeter.png" class="shop-item-image" align="middle" alt="ammeter">
+                        <span class="shop-item-Description">AMMETER</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="concave-lens">
+                    <div class="concave-lens items shop-item shop-item-title" id="concave-lens">
+                        <img src="icons\physics\concave-lens.png" class="shop-item-image" align="middle" alt="concave-lens">
+                        <span class="shop-item-Description">CONCAVE LENS</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" id="convex-lens">
+                    <div class="convex-lens items shop-item shop-item-title" id="convex-lens">
+                        <img src="icons\physics\convex-lens.png" class="shop-item-image" align="middle" alt="convex-lens">
+                        <span class="shop-item-Description">CONVEX LENS</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="galvanometer">
+                    <div class="galvanometer items shop-item shop-item-title" id="galvanometer">
+                        <img src="icons\physics\galvanometer.png" class="shop-item-image" align="middle" alt="galvanometer">
+                        <span class="shop-item-Description">GALVANOMETER</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="lens">
+                    <div class="lens items shop-item shop-item-title" id="lens">
+                        <img src="icons\physics\lens.png" class="shop-item-image" align="middle" alt="lens">
+                        <span class="shop-item-Description">LENS</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="magnet">
+                    <div class="magnet items shop-item shop-item-title" id="magnet">
+                        <img src="icons\physics\magnet.png" class="shop-item-image" align="middle" alt="magnet">
+                        <span class="shop-item-Description">MAGNET</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="multimeter">
+                    <div class="multimeter items shop-item shop-item-title" id="multimeter">
+                        <img src="icons\physics\multimeter.png" class="shop-item-image" align="middle" alt="multimeter">
+                        <span class="shop-item-Description">MULTIMETER</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="potentiometer">
+                    <div class="potentiometer items shop-item shop-item-title" id="potentiometer">
+                        <img src="icons\physics\potentiometer.png" class="shop-item-image" align="middle" alt="potentiometer">
+                        <span class="shop-item-Description">POTENTIOMETER</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="prism">
+                    <div class="prism items shop-item shop-item-title" id="prism">
+                        <img src="icons\physics\prism.png" class="shop-item-image" align="middle" alt="prism">
+                        <span class="shop-item-Description">PRISM</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="resistor">
+                    <div class="resistor items shop-item shop-item-title" id="resistor">
+                        <img src="icons\physics\resistor.png" class="shop-item-image" align="middle" alt="resistor">
+                        <span class="shop-item-Description">RESISTOR</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="spring-balance">
+                    <div class="spring-balance items shop-item shop-item-title" id="spring-balance">
+                        <img src="icons\physics\spring-balance.png" class="shop-item-image" align="middle" alt="spring-balance">
+                        <span class="shop-item-Description">SPRING BALANCE</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="thermometer">
+                    <div class="thermometer items shop-item shop-item-title" id="thermometer">
+                        <img src="icons\physics\thermometer.png" class="shop-item-image" align="middle" alt="thermometer">
+                        <span class="shop-item-Description">THERMOMETER</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="Triple-Beam-Balance">
+                    <div class="Triple-Beam-Balance items shop-item shop-item-title" id="Triple-Beam-Balance">
+                        <img src="icons\physics\Triple-Beam-Balance.png" class="shop-item-image" align="middle" alt="Triple-Beam-Balance">
+                        <span class="shop-item-Description">TRIPLE BEAM BALANCE</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="tuning-fork">
+                    <div class="tuning-fork items shop-item shop-item-title" id="tuning-fork">
+                        <img src="icons\physics\tuning-fork.png" class="shop-item-image" align="middle" alt="tuning-fork">
+                        <span class="shop-item-Description">TUNING FORK</span>
+                    </div>
+                </button>
+    
+                <button class="item-button btn btn-primary shop-item-button" type="button" id="voltmeter">
+                    <div class="voltmeter items shop-item shop-item-title" id="voltmeter">
+                        <img src="icons\physics\voltmeter.png" class="shop-item-image" align="middle" alt="voltmeter">
+                        <span class="shop-item-Description">VOLTMETER</span>
+                    </div>
+                </button>
+            </section>
+
+
+            <!-- CHECKOUT SECTION -->
+
+            <section class="chekout-section grid2">
+                <h2 class="checkout-header">ITEM CHECKOUT</h2> 
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                    <div class="cart-items"></div>
+                    <button class="btn btn-primary btn-purchase" type="button">TAP ID TO CHECKOUT</button>
+            </section>
+
+        </div>
+
         <div class="buttom-buttons">
             <a class="back-button" href="main-menu.html">
-                <button class="back-button"
-                    type="button">
-                    BACK
-                </button>
+                <button class="back-button" type="button">BACK</button>
             </a>
-    
             <a class="checkout-button" href="checkout.html">
-                <button class="checkout-button"
-                    type="button">
-                    CHECKOUT
-                </button>
+                <button class="checkout-button" type="button">CHECKOUT</button>
             </a>
         </div>
-        
+
     </main>
 
 
