@@ -569,16 +569,35 @@ header {
 
 .directory-container {
     position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+
+    padding-bottom: 32px;
+}
+
+.grid_title {
     display: flex;
     justify-content: center;
     align-content: center;
     text-align: center;
 
+    padding: 32px 32px 0 32px;
     flex-direction: row;
-    gap: 25px;
-    padding: 32px;
-
 }
+
+.directory_USER-ID, .directory_STATUS, .directory_EQUIPMENTS, .directory_TIME, .directory_DATE {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    text-align:left;
+
+    padding: 32px 32px 20px 32px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.222);
+}
+
 /* PENTABYTE PAGE */
 .pentabyte-page {
     display: flex;
@@ -671,7 +690,7 @@ footer {
     padding: 10px;
     width: 100%;
     
-    position: relative;
+    position: fixed;
     bottom: 0;
     right: 0;
 
