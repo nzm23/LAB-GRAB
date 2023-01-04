@@ -345,33 +345,6 @@ header {
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
-.checkout-button {
-    width: 150px;
-    height: 40px;
-    border: transparent;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: bolder;
-    text-decoration: none;
-    
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-
-    background-color: #c3ecc9;
-    color: #2d2d2d;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
-}
-
-.checkout-button:hover {
-    background-color: #9dec9e;
-}
-
-.checkout-button:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
 
 
 /* GENERAL EQUIPMENT STYLES */
@@ -435,6 +408,38 @@ header {
 
 .grid2 {
     grid-area: 1 / 2 / 2 / 3;
+}
+
+/* ENTER ID */
+.uid-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin: 10px 3px 0 0;
+    width: 75%;
+    min-height: 2em;
+}
+
+input[type="text"] {
+    padding-left: 5px;
+    color: #1f1f1f;
+  }
+
+input[type="submit"] {
+    display: block;
+    width: 80px;
+    height: 30px;
+    background-color: #afd1e4;
+    border: #afd1e4af;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: #49a7dd;
+    color: #f1f1f1;
 }
 
 /* CHEMISTRY EQUIPMENTS */
