@@ -570,7 +570,7 @@ header {
 .directory-container {
     position: relative;
     display: grid;
-    grid-template-columns: 2fr 1fr 3fr 1fr;
+    grid-template-columns: 2fr 1fr 3fr repeat(3,1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 0px;
@@ -596,6 +596,36 @@ header {
 
     padding: 32px 32px 20px 32px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.222);
+}
+
+.complete, .incomplete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 50px;
+    color: white;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+    margin-top: 15px;
+}
+
+.complete {
+    background-color: #4d95be;
+}
+
+.complete:hover {
+    background-color: #2D9CDB;
+}
+
+.incomplete {
+    background-color: #CC4C4C;
+}
+
+.incomplete:hover {
+    background-color: #FF0000;
 }
 
 /* PENTABYTE PAGE */
