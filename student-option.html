@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open-Sans">
-    <title>Equipment</title>
+    <title>LAB GRAB MENU</title>
 </head>
 <body>
     <header>
@@ -27,37 +27,30 @@
         </div>
     </header>
 
-    <main class="directory-page">
-        <div class="directory-container" id="directory-container">
-
-            <!-- label -->
-            <h3 class="grid_title">USER ID</h3>
-            <h3 class="grid_title">STATUS</h3>
-            <h3 class="grid_title">EQUIPMENTS</h3>
-            <h3 class="grid_title">DATE/TIME</h3>
-
-            <!-- CONTAINERS FOR CHECKED OUT EQUIPMENTS -->
-            <div class="directory_USER-ID">
-                <p>#</p>
-            </div>
-
-            <div class="directory_STATUS">
-                <p>#</p>
-            </div>
-
-            <div class="directory_EQUIPMENTS">
-                <p>#</p>
-            </div>
-
-            <div class="directory_DATE-TIME">
-                <p>#</p>
-            </div>
- 
+    <main class="main-menu">
+        <div class="menu-containers">
+            <!-- BORROWING -->
+            <a href="directory.html" id="directory">
+                <div class="directory">
+                    <h3 class="directory-name">Faculty</h3>
+                    <img class="directory-icon"
+                         alt="directory-icon" 
+                         src="icons\Directory_Icon.png">
+                </div>
+            </a>
+            
+            <!-- RETURNING -->
+            <a href="chemistry-equipment.html" id="equipment">
+                <div class="equipment" id="equipment">
+                    <h3 class="equipment-name">Student</h3>
+                    <img class="equipment-icon"
+                         alt="equipment-icon" 
+                         src="icons\Equipment_Icon.png">
+                </div>        
+            </a>
         </div>
-
-
         
-        <a class="back-button" href="main-menu.html">
+        <a class="back-button" href="index.html">
             <button class="back-button"
                 type="button">
                 BACK

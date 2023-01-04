@@ -570,7 +570,7 @@ header {
 .directory-container {
     position: relative;
     display: grid;
-    grid-template-columns: 2fr 1fr 3fr repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr 3fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 0px;
@@ -588,7 +588,7 @@ header {
     flex-direction: row;
 }
 
-.directory_USER-ID, .directory_STATUS, .directory_EQUIPMENTS, .directory_TIME, .directory_DATE {
+.directory_USER-ID, .directory_STATUS, .directory_EQUIPMENTS, .directory_DATE-TIME {
     display: flex;
     justify-content: left;
     align-content: center;
