@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open-Sans">
     <link rel="website icon" type="png" href="icons\Directory_Icon.png">
     <title>Directory</title>
+
+    <!--Bootstrap Script for Table-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 <body>
     <header>
@@ -28,39 +32,107 @@
         </div>
     </header>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container mt-3">
+        <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <th>Sno</th>
+            <th>UID</th>
+            <th>Status</th>
+            <th>Time</th>
+            <th>Equipments</th>
+        </thead>
+            <tbody id="tbody1"></tbody>
+        </table>
+    </div>        
+
+    <script type="module">
+
+        //-----------------------FILLING THE TABLE----------------------    
+                    var stdNo = 0;
+                    var tbody = document.getElementById('tbody1');
+        
+                    function AddItemToTable(id,status,time,equipments){
+                        let trow = document.createElement("tr");
+                        let td1 = document.createElement('td');
+                        let td2 = document.createElement('td');
+                        let td3 = document.createElement('td');
+                        let td4 = document.createElement('td');
+                        let td5 = document.createElement('td');
+        
+                        td1.innerHTML = ++stdNo;
+                        td2.innerHTML = id;
+                        td3.innerHTML = status;
+                        td4.innerHTML = time;
+                        td5.innerHTML = equipments;
+        
+                        trow.appendChild(td1);
+                        trow.appendChild(td2);
+                        trow.appendChild(td3);
+                        trow.appendChild(td4);
+                        trow.appendChild(td5);
+                        
+                        tbody.appendChild(trow);
+                    }
+        
+                    function AddAllItemsToTable(users){
+                        stdNo = 0;
+                        tbody.innerHTML = "";
+                        users.forEach(element => {
+                            AddItemToTable(element.uid, element.status, element.time);
+                        });
+                    }
+        
+                    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+                    // TODO: Add SDKs for Firebase products that you want to use
+                    // https://firebase.google.com/docs/web/setup#available-libraries
+        
+                    // Your web app's Firebase configuration
+                    const firebaseConfig = {
+                        apiKey: "AIzaSyAlTFOcghJ4MpX5RpfvCtnTKRrCMb9Hb30",
+                        authDomain: "lab-grab.firebaseapp.com",
+                        databaseURL: "https://lab-grab-default-rtdb.asia-southeast1.firebasedatabase.app",
+                        projectId: "lab-grab",
+                        storageBucket: "lab-grab.appspot.com",
+                        messagingSenderId: "684094465299",
+                        appId: "1:684094465299:web:7d99f4468475fbe541a6e6"
+                    };
+        
+                    // Initialize Firebase
+                    const app = initializeApp(firebaseConfig);
+        
+                    import {getDatabase, ref, child, onValue, get} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+                    const db = getDatabase();
+        
+        
+        //-----------------GETTING ALL DATA REALTIME -----------------------
+                    function GetAllDataRealtime(){
+                        const dbRef = ref(db,"borrow-return");
+
+                        onValue(dbRef,(snapshot)=>{
+                            var user = [];
+
+                            snapshot.forEach(childSnapshot =>{
+                                user.push(childSnapshot.val());
+                            });
+                            AddAllItemsToTable(user);
+                        });
+                    }
+                    
+                    window.onload = GetAllDataRealtime;
+                    
+    </script>
+
     <main class="directory-page">
-        <div class="directory-container" id="directory-container">
-
-            <!-- label -->
-            <h3 class="grid_title">USER ID</h3>
-            <h3 class="grid_title">STATUS</h3>
-            <h3 class="grid_title">EQUIPMENTS</h3>
-            <h3 class="grid_title">DATE/TIME</h3>
-            <div></div>
-            <div></div>
-
-            <!-- CONTAINERS FOR CHECKED OUT EQUIPMENTS -->
-            <div class="directory_USER-ID">
-                <p>#</p>
-            </div>
-
-            <div class="directory_STATUS">
-                <p>#</p>
-            </div>
-
-            <div class="directory_EQUIPMENTS">
-                <p>#</p>
-            </div>
-
-            <div class="directory_DATE-TIME">
-                <p>#</p>
-            </div>
-
-            <button class="complete" name="return-status">COMPLETE</button>
-            <button class="incomplete" name="return-status">INCOMPLETE</button>
- 
-        </div>
-
 
         
         <a class="back-button" href="main-menu.html">
